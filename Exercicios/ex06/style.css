@@ -1,0 +1,36 @@
+body {
+    width: 60%;
+    color: #fff;
+  }
+  
+  .transform {
+    background-color: red;
+  }
+  
+  .scale {
+    background-color: green;
+    transform: scale(2.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rotate {
+    background-color: black;
+    transform: rotate(45deg);
+  }
+  
+  .translate {
+    background-color: blue;
+    transform: translate(50px); /*EM PXs. Quando negativo em Y, a div sobe; quando positivo, desce*/
+  }
+  
+  .skew {
+    transform: skew(45deg);
+    background-color: lightskyblue;
+  }
+  
+  .matriz{
+    background-color: yellow;
+    transform: matriz(0.9, -0.05, -0.3, 0.9, 10, 10)
+  }

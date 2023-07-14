@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
+}
+
+body {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0px;
+}
+
+/* Header */
+header {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+/*Flex solution*/
+header .intro-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+header .intro-text p, header .intro-text h1 {
+  color: #ecece2;
+}
+
+header .intro-text h1 {
+  margin: 0px;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+header .intro-text p {
+  font-size: 2em;
+  font-style: italic;
+}
+
+header .intro-text .btn-intro {
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+  border-radius: 3px;
+  font-size: 1.5em;
+  padding: 20px 40px;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* Main */
+main {
+  padding: 10%;
+  color: #333;
+  font-size: 0.9rem;
+  display: grid;
+  grid-template-areas: "servico servico servico servico servico"
+  ". i1 i2 i3 ."
+  ". i4 i5 i6 .";
+  grid-gap: 10px;
+}
+main .service-description{
+  margin-bottom: 10%;
+  grid-area: servico;
+  justify-self: center;
+  text-align: center;
+}
+.service{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+main .service .circle-icon {
+  background-color: #ffd53d;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  align-items : center;
+  justify-content: center;
+
+}
+main .i1 {
+  grid-area: i1;
+}
+main .i2 {
+  grid-area: i2;
+}
+main .i3 {
+  grid-area: i3;
+}
+main .i4 {
+  grid-area: i4;
+}
+main .i5 {
+  grid-area: i5;
+}
+main .i6 {
+  grid-area: i6;
+}
+
+main .service-description  h1 {
+  font-size: 3em;
+}
+
+main .service-description  p {
+  color: #777;
+  font-style: italic;
+}
+
+main .service p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* footer */
+footer{
+  background-color: #ecece2;
+  text-align: center;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  justify-items: center;
+  }
+.footer-content section{
+  width: 25%;
+}
+footer section.social a {
+  color: #555;
+  text-decoration: none;
+}
+footer section.copyright {
+  color: #555;
+  background-color: #c7c7af;
+}
+
+footer section.copyright i.fa-heart {
+  color: #f00;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social h1{
+  grid-column: 1/3;
+}
+
+.social ul li{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 5px;
+  align-self: center;
+}
+
+.social ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding-left: 50%;
+  padding-right: 50%;
+  }
+
+.social ul li a{
+  border: 2px solid rgb(53, 52, 52);
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
